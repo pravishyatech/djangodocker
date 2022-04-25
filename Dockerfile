@@ -4,9 +4,9 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /home/ec2-user/code
 
-COPY requirements.txt
+COPY requirements.txt .
 
-RUN pip install requirements.txt -r
+RUN pip3 install requirements.txt -r
 
 COPY . ./
 
