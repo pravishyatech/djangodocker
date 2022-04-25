@@ -2,13 +2,7 @@ FROM python:3.9
 
 ENV PYTHONUNBUFFERED=1
 
-WORKDIR /home/ec2-user/code
-
-COPY requirements.txt .
-
-RUN pip3 install requirements.txt -r
-
-COPY . ./
+WORKDIR /home/ec2-user/djangodocker
 
 EXPOSE 8000
 
